@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)BeginEdit1:(id)sender;
+- (IBAction)EndEdit1:(id)sender;
+- (IBAction)BeginEdit2:(id)sender;
+@property (strong, nonatomic) IBOutlet UITextField *txtEste;
+@property (strong, nonatomic) IBOutlet UITextField *txtUltimo;
+@property (strong, nonatomic) IBOutlet UIScrollView *Scroll;
 
 @end
 

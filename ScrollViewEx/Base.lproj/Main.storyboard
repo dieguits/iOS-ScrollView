@@ -60,10 +60,14 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJ5-dY-oQN">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Este" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJ5-dY-oQN">
                                                 <rect key="frame" x="20" y="286" width="280" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="BeginEdit1:" destination="LiW-9R-8eE" eventType="editingDidBegin" id="xj3-kV-sv2"/>
+                                                    <action selector="EndEdit1:" destination="LiW-9R-8eE" eventType="editingDidEnd" id="eVv-RV-IL9"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u6m-Qg-gOA">
                                                 <rect key="frame" x="20" y="324" width="280" height="30"/>
@@ -85,10 +89,13 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dS0-r8-oS1">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ultimo" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dS0-r8-oS1">
                                                 <rect key="frame" x="20" y="476" width="280" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="BeginEdit2:" destination="LiW-9R-8eE" eventType="editingDidBegin" id="j6n-T0-fTv"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dh-bT-Dxx">
                                                 <rect key="frame" x="137" y="518" width="46" height="30"/>
@@ -175,6 +182,11 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="Scroll" destination="kG1-hp-5zh" id="rnB-vw-RCp"/>
+                        <outlet property="txtEste" destination="hJ5-dY-oQN" id="KJz-UD-Z9W"/>
+                        <outlet property="txtUltimo" destination="dS0-r8-oS1" id="bRL-dK-K0g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lB-MP-Gl1" sceneMemberID="firstResponder"/>
             </objects>
